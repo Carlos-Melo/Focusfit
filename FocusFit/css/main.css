@@ -1,0 +1,285 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-img img {
+  width: 100%;
+}
+
+.escolha-fit {
+  text-align: center;
+  margin: 70px 0px 50px 0px;
+}
+
+.escolha-fit span {
+  color: #616161;
+}
+
+.escolha-fit p {
+  font-size: 25px;
+}
+
+.planos {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.planos div {
+  width: 250px;
+  border-radius: 3px;
+  padding: 20px;
+  margin-top: 5px;
+  text-align: center;
+  background-color: #121518;
+}
+
+.planos div h3 {
+  color: #fafafa;
+}
+
+.planos div h2 {
+  margin: 10px;
+  color: #616161;
+}
+
+.planos div h1 {
+  color: #fafafa;
+}
+
+.aulas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.aulas img {
+  width: 20%;
+  border-radius: 5px;
+  -webkit-box-shadow: black 0px 0px 5px;
+          box-shadow: black 0px 0px 5px;
+  margin-bottom: 50px;
+}
+
+.conheça-focus {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.conheça-focus h1 {
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+.conheça-focus h1 span {
+  color: #616161;
+}
+
+.conheça-focus p {
+  font-size: 25px;
+}
+
+.fotos-academia {
+  width: 100%;
+  background-color: #121518;
+  padding: 50px 0px;
+  margin: auto;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fotos-academia div {
+  width: 50%;
+  text-align: center;
+}
+
+.fotos-academia div .c-carousel img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.fotos-academia div .c-carousel .right-1,
+.fotos-academia div .c-carousel .left-1 {
+  visibility: hidden;
+}
+
+.fotos-academia div .glider-dots .active {
+  background-color: #121518;
+}
+
+.fotos-academia div .glider-dot {
+  border: 1px solid #fafafa;
+}
+
+.mapa h3 {
+  background-color: #121518;
+  text-align: center;
+  font-size: 20px;
+  color: #fafafa;
+  padding: 7px 0px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.imc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #121518;
+  margin-bottom: 2px;
+  color: #fafafa;
+  padding: 30px;
+}
+
+.imc p {
+  margin: 10px 0px;
+}
+
+.imc input {
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+}
+
+.imc button {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 7px;
+  background-color: #424242;
+  color: #fafafa;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.imc button:hover {
+  background-color: #464646;
+}
+
+.imc .table-referencia table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.imc .table-referencia table tr {
+  background-color: #424242;
+  padding: 5px;
+}
+
+.imc .table-referencia table tr th {
+  border: 2px solid #121518;
+  padding: 5px;
+}
+
+.imc .table-referencia table tr td {
+  border: 2px solid #121518;
+  padding: 5px;
+}
+
+footer {
+  background-color: #121518;
+  color: #fafafa;
+}
+
+footer address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #121518;
+  padding: 50px;
+}
+
+footer address h3 {
+  margin-bottom: 10px;
+}
+
+footer address .redes figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer address .redes figure img {
+  width: 30px;
+  margin: 5px;
+}
+
+.versao {
+  margin-left: 10px;
+}
+
+/*@media only screen and (min-width: 768px) {
+    
+}
+@media only screen and (min-width: 992px) {
+
+    
+}
+@media only screen and (min-width: 1200px) {
+
+}*/
+@-webkit-keyframes example {
+  0% {
+    opacity: 0;
+    left: 0px;
+    top: 20px;
+  }
+  30% {
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes example {
+  0% {
+    opacity: 0;
+    left: 0px;
+    top: 20px;
+  }
+  30% {
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
