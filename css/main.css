@@ -7,8 +7,26 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.main-img img {
+.banner .main-img img {
   width: 100%;
+}
+
+.banner .main-img figcaption {
+  color: #fafafa;
+  top: 15%;
+  left: 10%;
+  position: absolute;
+  -webkit-animation: showText 2s;
+          animation: showText 2s;
+}
+
+.banner .main-img figcaption h1 {
+  font-size: 4vw;
+  margin-bottom: 10px;
+}
+
+.banner .main-img figcaption p {
+  font-size: 1.5vw;
 }
 
 .escolha-fit {
@@ -27,13 +45,13 @@
 .planos {
   width: 80%;
   margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .planos div {
@@ -60,15 +78,13 @@
 
 .aulas {
   width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .aulas img {
@@ -99,15 +115,15 @@
 
 .fotos-academia {
   width: 100%;
-  background-color: #121518;
-  padding: 50px 0px;
-  margin: auto;
-  margin-bottom: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #121518;
+  padding: 50px 0px;
+  margin: auto;
+  margin-bottom: 2px;
 }
 
 .fotos-academia div {
@@ -148,11 +164,11 @@
 }
 
 .imc {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #121518;
@@ -165,11 +181,15 @@
   margin: 10px 0px;
 }
 
+.imc label {
+  margin-bottom: 7px;
+}
+
 .imc input {
   border: none;
   border-radius: 3px;
   padding: 5px;
-  margin: 5px;
+  margin-bottom: 10px;
   outline: none;
 }
 
@@ -177,10 +197,9 @@
   border: none;
   border-radius: 3px;
   padding: 5px 7px;
-  background-color: #424242;
+  background-color: #464646;
   color: #fafafa;
   cursor: pointer;
-  margin: 5px;
 }
 
 .imc button:hover {
@@ -193,7 +212,7 @@
 }
 
 .imc .table-referencia table tr {
-  background-color: #424242;
+  background-color: #464646;
   padding: 5px;
 }
 
@@ -213,11 +232,11 @@ footer {
 }
 
 footer address {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #121518;
@@ -232,11 +251,11 @@ footer address .redes figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 footer address .redes figure img {
@@ -248,38 +267,50 @@ footer address .redes figure img {
   margin-left: 10px;
 }
 
-/*@media only screen and (min-width: 768px) {
-    
+@media only screen and (max-width: 950px) {
+  .imc p {
+    margin-bottom: 30px;
+  }
+  footer address {
+    display: block;
+    text-align: center;
+  }
+  footer address div {
+    margin-top: 15px;
+  }
+  footer address .redes figure {
+    display: block;
+    margin: auto;
+  }
 }
-@media only screen and (min-width: 992px) {
 
-    
+@media only screen and (max-width: 600px) {
+  .banner .main-img figcaption {
+    top: 7%;
+  }
+  .fotos-academia {
+    display: block;
+  }
+  .fotos-academia div {
+    width: 100%;
+  }
 }
-@media only screen and (min-width: 1200px) {
 
-}*/
-@-webkit-keyframes example {
+@-webkit-keyframes showText {
   0% {
     opacity: 0;
-    left: 0px;
-    top: 20px;
   }
-  30% {
+  100% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
   }
 }
-@keyframes example {
+
+@keyframes showText {
   0% {
     opacity: 0;
-    left: 0px;
-    top: 20px;
   }
-  30% {
+  100% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */

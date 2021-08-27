@@ -1,21 +1,57 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
+    .imc {
+        p {
+            margin-bottom: 30px;
+        }
+    }
 
+    footer {
+
+        address {
+            display: block;
+            text-align: center;
+
+            div {
+                margin-top: 15px;
+            }
+
+            .redes {
+                figure {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
 }
-@media only screen and (min-width: 600px) {
 
+@media only screen and (max-width: 600px) {
+
+    .banner {
+        .main-img {
+            figcaption {
+                top: 7%;
+            }
+        }
+    }
+
+    .fotos-academia {
+        display: block;
+
+        div {
+            width: 100%;
+        }
+    }
 }
-/*@media only screen and (min-width: 768px) {
-    
-}
-@media only screen and (min-width: 992px) {
 
-    
-}
-@media only screen and (min-width: 1200px) {
+@keyframes showText {
+    0% {
+        opacity: 0;
 
-}*/
+    }
 
-@keyframes example {
-    0% {opacity: 0; left: 0px; top: 20px;}
-    30% {opacity: 1; left: 0px; top: 0px;}
+    100% {
+        opacity: 1;
+
+    }
 }

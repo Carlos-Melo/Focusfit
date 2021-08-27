@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,17 @@
 <body>
 
     <main>
-        <figure class="main-img">
-            <img src="./imagens/cabecalho.jpg">
-        </figure>
+
+        <div class="banner">
+            <figure class="main-img">
+                <img src="./imagens/cabecalho2.png">
+                <figcaption>
+                    <h1>AQUI<br>SEU TREINO<br>SERÁ LEVADO A<br>SÉRIO!</h1>
+                    <P>Academia perfeita para quem quer<br> começar no mundo fitness e alcançar seu<br> objetivo.</P>
+                </figcaption>
+            </figure>
+        </div>
+
 
         <div class="escolha-fit">
             <h1>Escolha uma plano e torne-se um <span>Fit</span></h1>
@@ -85,9 +94,13 @@
             <div>
                 <h2>Calcule seu IMC</h2>
                 <p>Utilize como referência a tabela para saber se você está no peso ideal.</p>
-                <input type="text" placeholder="Peso / kg"><br>
-                <input type="text" placeholder="Altura / cm"><br>
-                <button>Calcular</button>
+                <label for="peso">Peso</label><br>
+                <input type="text" name="peso" placeholder="60.5 / kg"><br>
+                <label for="altura">Altura</label><br>
+                <input type="text" name="altura" placeholder="1.70 / m"><br>
+                <button onclick="imcCalc()">Calcular</button>
+
+                <p id="result"></p>
             </div>
             <div class="table-referencia">
                 <table>

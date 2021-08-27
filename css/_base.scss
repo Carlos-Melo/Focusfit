@@ -1,7 +1,21 @@
+$bg-black: #121518;
+$white: #fafafa;
+$gray: #616161;
+$dark-gray: #464646;
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+}
+
+@mixin containerDisplay($justify: false) {
+
+    @if $justify {
+        justify-content: space-around;
+    }
+    display: flex;
+    flex-wrap: wrap;
 }
 
